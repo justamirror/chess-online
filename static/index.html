@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chess Online</title>
+    <style>
+      body * {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      body * * {
+        position: initial;
+      }
+      canvas {
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas></canvas>
+    <div id='login'>
+      Name: <input id='name'></input><br>
+      <button id='start'>Start</button><br>
+      <a href="https://beta--chess-online.repl.co/" id='version-switch'>Switch to Beta</a>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src='./index.js' type="module"></script>
+  </body>
+</html>
