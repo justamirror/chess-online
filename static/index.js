@@ -13,7 +13,7 @@ async function load(imgs) {
       let image = new Image();
       image.addEventListener('error', reject);
       image.addEventListener('load', ()=>accept(image));
-      image.src = url
+      image.src = urln
     })
   }
   let promises = [];
